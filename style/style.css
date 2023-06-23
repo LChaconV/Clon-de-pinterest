@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  align-items: center;
+  padding: 0 10px;
+  gap: 5px;
+}
+header p {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  border-radius: 20px;
+  height: 90%;
+  width: 60px;
+}
+header p:hover {
+  cursor: pointer;
+}
+header p:active {
+  color: aliceblue;
+  background-color: black;
+  border: 1px solid black;
+}
+.header-input {
+  width: 70%;
+  padding: 15px 10px;
+  border-radius: 50px;
+  background-color: #e9e9e9;
+  border: none;
+  color: rgb(51, 51, 51);
+}
+
+.icono {
+  height: 35%;
+}
+.icono:hover {
+  cursor: pointer;
+  /* height: 50%; Aumentaría el tamaño del icono al pasar el cursor*/
+}
+i:hover {
+  cursor: pointer;
+}
+#usuario {
+  height: 50%;
+  border-radius: 50%;
+}
+
+/* ---------------------- MAIN----------------------*/
+main {
+  columns: 5 100px;
+  column-gap: 2%;
+  display: block;
+}
+
+main > div {
+  margin-bottom: 4%;
+  position: relative;
+}
+main > div > img {
+  z-index: 1;
+  max-width: 100%;
+}
+main > div:hover > img {
+  opacity: 0.5;
+}
+.button-img {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 90%;
+}
+main > div:hover .button-img {
+  display: flex;
+  flex-flow: column;
+}
+.opcion-guardar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 5%;
+  height: 20%;
+  color: white;
+ 
+}
+.opcion-guardar > button {
+  color: white;
+  background-color: rgb(216, 24, 24);
+  align-items: center;
+  padding: 10% 5%;
+  border-bottom-color: none;
+  border-radius: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+}
+
+.opcion-otro > button{
+  align-items: center;
+}
+.opcion-otro {
+  display: flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+  height: 90%;
+}
+.opcion-otro > i{
+ 
+  padding: auto;
+  border-radius: 80%;
+  align-items: center;
+}
