@@ -33,7 +33,7 @@ header p:active {
   background-color: black;
   border: 1px solid black;
 }
-.header-input {
+.finder {
   width: 70%;
   padding: 15px 10px;
   border-radius: 50px;
@@ -41,9 +41,22 @@ header p:active {
   border: none;
   color: rgb(51, 51, 51);
 }
+#navbar-pinterest{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  width: 100px;
+  gap: 10px;
+}
+#profile-img{height: 50px;
+  
+
+}
 
 .icono {
-  height: 35%;
+  height: 25%;
+  
 }
 .icono:hover {
   cursor: pointer;
@@ -53,8 +66,10 @@ i:hover {
   cursor: pointer;
 }
 #usuario {
+
   height: 50%;
   border-radius: 50%;
+  
 }
 
 /* ---------------------- MAIN----------------------*/
