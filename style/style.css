@@ -4,15 +4,22 @@
   box-sizing: border-box;
 }
 header {
+  
+  left: 0;
+  top: 0;
+  right: 0;
+  position:fixed ;
   display: flex;
+  
   justify-content: space-between;
-  background-color: aqua;
+  background-color:rgba(197, 190, 190, 0.822);
   display: flex;
   flex-direction: row;
   height: 10vh;
   align-items: center;
   padding: 0 10px;
   gap: 5px;
+  
 }
 header p {
   display: flex;
@@ -56,9 +63,11 @@ header p:active {
   
 
 }
-
+header a{
+  height: 55%
+}
 .icono {
-  height: 25%;
+  height: 100%;
   
 }
 .icono:hover {
@@ -77,6 +86,7 @@ i:hover {
 
 /* ---------------------- MAIN----------------------*/
 main {
+  padding: 70px;
   columns: 5 100px;
   column-gap: 2%;
   display: block;
